@@ -1,11 +1,11 @@
 class Pirate
+  attr_reader :name, :weight, :height
   @@all = []
-  attr_accessor :name, :weight, :height
 
-  def initialize(name, weight, height)
-    @name = name
-    @weight = weight
-    @height = height
+  def initialize(params)
+    @name = params[:name]
+    @weight = params[:weight]
+    @height = params[:height]
   end
 
   def self.all
